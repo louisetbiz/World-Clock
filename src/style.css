@@ -7,12 +7,21 @@ body {
 h1 {
     font-size: 36px;
     color: #AD2A81;
+    padding-top:20px;
     
-
 }
 
-p{
-    font-size: 12px;
+footer{
+    font-size: 10px;
     color:#FF70CF;
+    padding-bottom: 15px;
+    margin-top: 10px;;
     
+}
+
+.container{
+    width:600px;
+    background-color: white;
+    box-shadow: rgba(0,0,0,.88);
+    margin:0 auto;
 }
