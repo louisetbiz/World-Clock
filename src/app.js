@@ -1,23 +1,33 @@
 function updateTime(){
 //PARIS
 let parisElement = document.querySelector("#paris");
-if (parisElement){
+
 let parisDateElement = parisElement.querySelector(".date");
 let parisTimeElement = parisElement.querySelector(".time");
 let parisTime = moment().tz("Europe/Paris");
 parisDateElement.innerHTML = parisTime.format("dddd, Do, YYYY");
 parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
-}
 
-//LISBON
-let lisbonElement = document.querySelector("#lisbon");
-if (lisbonElement){
-let lisbonDateElement = lisbonElement.querySelector(".date");
-let lisbonTimeElement = lisbonElement.querySelector(".time");
-let lisbonTime = moment().tz("Europe/Lisbon");
-lisbonDateElement.innerHTML = lisbonTime.format("dddd, Do, YYYY");
-lisbonTimeElement.innerHTML = lisbonTime.format("h:mm:ss [<small>]A[</small>]");
-}}
+
+//SYDNEY
+let sydneyElement = document.querySelector("#sydney");
+
+let sydneyDateElement = sydneyElement.querySelector(".date");
+let sydneyTimeElement = sydneyElement.querySelector(".time");
+let sydneyTime = moment().tz("Australia/Sydney");
+sydneyDateElement.innerHTML = sydneyTime.format("dddd, Do, YYYY");
+sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss [<small>]A[</small>]");
+
+
+//BAHIA
+let bahiaElement = document.querySelector("#bahia");
+
+let bahiaDateElement = bahiaElement.querySelector(".date");
+let bahiaTimeElement = bahiaElement.querySelector(".time");
+let bahiaTime = moment().tz("America/Bahia");
+bahiaDateElement.innerHTML = bahiaTime.format("dddd, Do, YYYY");
+bahiaTimeElement.innerHTML = bahiaTime.format("h:mm:ss [<small>]A[</small>]");
+}
 
 
 function updateCity(event){
@@ -44,7 +54,6 @@ updateTime();
 setInterval(updateTime, 1000);
 
 
+
 let citiesSelectElement = document.querySelector("#city");
-
-
 citiesSelectElement.addEventListener("change", updateCity);
