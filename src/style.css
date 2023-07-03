@@ -1,12 +1,12 @@
 body {
-    background-color: #ad2a811b;
+    background-color: #2f9dc2;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
 h1 {
     font-size: 36px;
-    color: #AD2A81;
+    color: #0d4a50;
     text-align: center;
     font-family: sans-serif;
     
@@ -14,7 +14,7 @@ h1 {
 
 footer{
     font-size: 10px;
-    color:#FF70CF;
+    color:#2FB9C6;
     margin-top: 10px;
     text-align: center;
     
